@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<link type="text/css " rel="stylesheet" href="css/lifesaver.css">
+	
+	<script src="js/magic.js">
+		
+	</script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">    </script>
+     <script>
+     //once the page is loaded
+     	$(document).ready(function(){
+     		//find image element and attach a event called onmouseover
+     		$("img").mouseover(function(){
+     			//alert('mouse took over image');
+     			$(this).animate({
+     				width: "500px",
+     				height: "500px"
+     			});
+     			
+     		});
+     		$("img").mouseout(function(){
+     			//alert('mouse took over image');
+     			$(this).animate({
+     				width: "300px",
+     				height: "300px"
+     			});
+     			
+     		});
+     		
+     	});
+     </script>
+	</head>
+	
+	<body>
+		
+		
+		
+	
+	<div class="box">
+		   <div class="box-title"><h3> what is html5!!1</h3> </div>
+		   <div class="box-desc"><p> HTML is a <b>  
+	       <em> hypertext markup language,  
+	       </em>
+	       </b>  
+	        it is used to build static wwb pages</p> </div>
+	</div>
+	
+	
+	<div class="box">
+		   <div class="box-title">	<h3> what is CSS?</h3> </div>
+		   <div class="box-desc"> 	<P> CSS stnds for cascading style. it is used for formatting the htlm l page or beautify the html code</P> </div>
+	</div>
+	
+	
+	
+	<div class="box">
+		   <div  class="box-title">	<h3> what is js?</h3> </div>
+		   <div class="box-desc"><p> js stands for javascript. it is a browser programming language</p> </div>
+	</div>
+	<br>
+	
+	<div style ="clear:left"> </div>
+	
+	
+		<label> User</label>
+		<input id="idAnubhav">
+		
+		<label>Password</label>
+		<input id="idPass">
+		
+		<br>
+		<button onclick= callMe();> Click me</button>
+		<br>
+		<button onclick=magicHappens();>Magic</button>
+		<button onclick= showMeAsync()>Async Test </button>
+		<button onclick = onAdd()> Add Element</button>
+		<button onclick =onMrIndai()>Mr.India</button>
+		<button onclick =onMugambo()>Hey Mugambo</button>
+		<br>
+		<button onclick ="showMeMoves()">Dancing Fields</button>
+		<div id="mario"></div>
+		<img src ="images/ysjagan.jpg" height = "300px" width = "300px" alt="reference broken">
+	</body>
+</html>
